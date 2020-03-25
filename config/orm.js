@@ -54,7 +54,7 @@ const orm = {
         const queryString = "UPDATE " + tableInput + " SET " + objToSql(objColVals) + " WHERE " + condition;
 
         console.log(queryString);
-        connection.query(queryString, vals, function (err, result) {
+        connection.query(queryString, objColVals, function (err, result) {
             if (err) {
                 throw err;
             }

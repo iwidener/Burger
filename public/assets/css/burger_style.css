@@ -1,0 +1,36 @@
+body {
+    background-color: bisque;
+    background-image: url("/assets/img/burger.png");
+}
+.headingOne {
+    margin-left: 100px;
+}
+
+.listOne {
+    margin-left: 100px;
+}
+.headingTwo {
+    margin-top: 50px;
+    margin-right: 250px;
+}
+
+.listTwo {
+    margin-right: 250px;
+}
+
+.label {
+    font-weight: bold;
+}
+
+.create-form {
+    padding: 5px;
+    margin: 5 px;
+}
+
+.form-group {
+    margin-bottom: 5px;
+}
+
+ul {
+    list-style: none;
+}
