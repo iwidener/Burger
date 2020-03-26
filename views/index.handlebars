@@ -1,35 +1,40 @@
 <h1>Eat-Da-Burger!</h1>
 
-<div class="headingOne" id="leftside"><strong>Order Your Burger</strong></div><br>
+<div class="container"></div>
+
+<div class="headingOne" id="leftside"></div>
 <div class="listOne">
+    <h2><strong>Order Your Burger:</strong></h2>
     <ol>
         {{#each burgers}}
         {{#unless this.devoured}}
         <li>
-            <p><span class="label">{{this.burger_name}}</span><button data-id="{{this.id}}"
-                    class="devour">Devour It!</button></p>
+            <p><span class="label">{{this.burger_name}}</span><button data-id="{{this.id}}" class="devour">Devour
+                    It!</button></p>
         </li>
         {{/unless}}
         {{/each}}
     </ol>
 </div>
 
-<div class="headingTwo" id="rightside"><strong>Burgers Devoured</strong></div><br>
+<div class="headingTwo" id="rightside"></div>
 <div class="listTwo">
+    <h2><strong>Burgers Devoured:</strong></h2>
     <ol>
         {{#each burgers}}
         {{#if this.devoured}}
         <li>
-            <p><span class="label">{{this.burger_name}}</span></p>
+            <p><span class="label">{{this.burger_name}}</span><button data-id="{{this.id}}" class="remove">Delete
+                    It!</button></p>
         </li>
         {{/if}}
         {{/each}}
     </ol>
 </div>
+</div>
 
 <form class="create-form">
     <div class="form-group">
-        <label for="burger">Order Burger:</label>
         <input type="text" id="newbrgr" name="newbrgr">
     </div>
 

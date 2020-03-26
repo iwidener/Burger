@@ -30,5 +30,15 @@ $(function () {
             location.reload();
         });
     });
-        
+
+    $(".remove").on("click", function (event) {
+        event.preventDefault();
+        const id = $(this).data("id");
+        $.ajax( "/api/burgers/", + id, {
+            type: "DELETE",
+        }).then(function () {
+            console.log("deleted id", id);
+            location.reload();
+        });
+    });
 });

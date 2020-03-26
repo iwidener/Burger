@@ -1,21 +1,45 @@
 body {
     background-color: bisque;
     background-image: url("/assets/img/burger.png");
-}
-.headingOne {
-    margin-left: 100px;
+    background-repeat: no-repeat;
+    background-size: 500px 500px;
+    background-position: center;
 }
 
-.listOne {
-    margin-left: 100px;
-}
-.headingTwo {
+h1 {
     margin-top: 50px;
-    margin-right: 250px;
+    text-align: center;
 }
 
-.listTwo {
-    margin-right: 250px;
+button {
+    margin-top: 10px; 
+    width: 100px;
+    height: 25px;
+    text-align: center;
+    font-weight: bold;
+    background: green;
+    border-color: black;
+}
+
+#leftside.headingOne {
+    display: inline-flex;
+    font-size: 18px;
+}
+
+div.listOne {
+    margin-left: 100px;
+    display: inline-table;
+}
+
+#rightside.headingTwo {
+    display: inline-flex;
+    font-size: 18px;
+}
+
+div.listTwo {
+    display: inline-table;
+    float: right;
+    margin-right: 300px;
 }
 
 .label {
@@ -23,14 +47,46 @@ body {
 }
 
 .create-form {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
     padding: 5px;
-    margin: 5 px;
+    margin-top: 500px;
+}
+
+input#newbrgr {
+    width: 450px;
+    height: 40px;
+    font-size: 16px;
+}
+
+button.devour {
+    margin-left: 10px;
+    margin-top: 10px; 
+    width: 100px;
+    height: 25px;
+    text-align: center;
+    font-weight: bold;
+    background: green;
+    border-color: black;
+}
+
+h4 {
+    text-align: center;
+    font-size: 18px;
 }
 
 .form-group {
     margin-bottom: 5px;
 }
 
-ul {
-    list-style: none;
+button.remove {
+    margin-left: 10px;
+    margin-top: 10px; 
+    width: 100px;
+    height: 25px;
+    text-align: center;
+    font-weight: bold;
+    background: red;
+    border-color: black;
 }
