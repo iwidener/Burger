@@ -32,9 +32,10 @@ $(function () {
     });
 
     $(".remove").on("click", function (event) {
+        console.log("delete");
         event.preventDefault();
         const id = $(this).data("id");
-        $.ajax( "/api/burgers/", + id, {
+        $.ajax( "/api/burgers/" + id, {
             type: "DELETE",
         }).then(function () {
             console.log("deleted id", id);
