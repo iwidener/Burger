@@ -32,7 +32,7 @@
 * Handlebars
 
 ## Deployment
-Heroku link:  https://floating-eyrie-38357.herokuapp.com/
+Heroku link: https://burger-star.herokuapp.com/
 
 ## Other
 An image of burger is a free download from pngtree.com 
